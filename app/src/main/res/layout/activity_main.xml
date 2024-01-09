@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/plus"
+                android:id="@+id/increaseTitleBtn"
+                android:scaleType="fitXY"
+
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:src="@drawable/minus"
+                android:scaleType="fitXY"
+
+                android:layout_marginStart="5dp"
+                android:id="@+id/decreaseTitleBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/date_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="Sana:"
+            android:textSize="37dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:ignore="NestedWeights" />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_weight="8"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hour_text"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/conom_text"
+        android:text=":"
+        android:textStyle="bold"
+
+        android:layout_marginHorizontal="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/minute_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+
+         <LinearLayout
+             android:gravity="center"
+             android:layout_width="0dp"
+             android:layout_weight="3"
+             android:layout_height="match_parent">
+
+         <ImageView
+             android:src="@drawable/plus"
+             android:id="@+id/increaseBtn"
+             android:scaleType="fitXY"
+
+             android:layout_width="20dp"
+             android:layout_height="20dp" />
+
+         <ImageView
+             android:src="@drawable/minus"
+             android:layout_marginStart="5dp"
+             android:id="@+id/decreaseBtn"
+             android:scaleType="fitXY"
+             android:layout_width="20dp"
+             android:layout_height="20dp" />
+     </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:gravity="center|top"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fajr_title"
+                android:text="BOMDOD"
+                android:autoText="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/fajr_time_tv"
+                    android:text="06:14"
+                    android:textSize="45dp"
+                    android:gravity="center|top"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/sunrise_title"
+
+                android:text="QIYOM"
+                android:autoText="true"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:textStyle="bold"
+
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+     <TextView
+                    android:id="@+id/sunrise_time_tv"
+                    android:text="07:39"
+                    android:textSize="45dp"
+         android:gravity="center|top"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center|top"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/zuhr_title"
+
+                android:text="PESHIN"
+                android:autoText="true"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/zuhr_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:text="12:22"
+                    android:textColor="@color/white"
+                    android:textSize="45dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/asr_title"
+
+                android:text="ASR"
+                android:autoText="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/asr_time_tv"
+                    android:text="15:16"
+                    android:textSize="45dp"
+                    android:gravity="center|top"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center|top"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/magrib_title"
+
+                android:text="SHOM"
+                android:autoText="true"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:textStyle="bold"
+
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+                    android:id="@+id/magrib_time_tv"
+                    android:text="16:58"
+                    android:textSize="45dp"
+            android:gravity="center|top"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/isha_title"
+                android:text="HUFTON"
+                android:autoText="true"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:textColor="#00FDD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/isha_time_tv"
+                    android:text="18:19"
+                    android:textSize="45dp"
+                    android:gravity="center|top"
+                    android:textColor="#F9A825"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
